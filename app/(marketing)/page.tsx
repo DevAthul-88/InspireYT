@@ -65,9 +65,9 @@ export default function IndexPage() {
               data-aos-once="true"
             >
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-md:hidden">
-                <div className="max-lg:hidden max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/20 blur-[145px]" />
-                <div className="max-lg:w-[335px] max-1xl:h-[335px] max-1xl:blur-[80px]  1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/25 -ml-[170px] -mt-150 max-md:ml-0 blur-[145px]" />
-                <div className="max-lg:hidden max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/20 -ml-[170px] blur-[145px]" />
+                <div className="max-lg:hidden max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary1-200/20 blur-[145px]" />
+                <div className="max-lg:w-[335px] max-1xl:h-[335px] max-1xl:blur-[80px]  1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary1-200/25 -ml-[170px] -mt-150 max-md:ml-0 blur-[145px]" />
+                <div className="max-lg:hidden max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary1-200/20 -ml-[170px] blur-[145px]" />
               </div>
               <div className="absolute left-1/2 -bottom-150 p-[350px] -translate-x-1/2 bg-contain w-full h-full  bg-no-repeat bg-center opacity-70 md:hidden -z-10" />
               <div className="w-full h-full">
@@ -79,7 +79,7 @@ export default function IndexPage() {
                     <Image
                       src={Image1}
                       alt="hero Image"
-                      className="hidden dark:inline-block rounded-medium w-full "
+                      className="inline-block border rounded-medium w-full "
                     />
                   </div>
                 </div>
@@ -154,9 +154,9 @@ export default function IndexPage() {
           </div>
           <div className="relative z-10">
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex max-md:flex-col -z-10 max-md:hidden">
-              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/20 blur-[145px]" />
-              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/25 -ml-[170px] max-md:ml-0 blur-[145px]" />
-              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/20 -ml-[170px] max-md:ml-0 blur-[145px]" />
+              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary1-200/20 blur-[145px]" />
+              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary1-200/25 -ml-[170px] max-md:ml-0 blur-[145px]" />
+              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary1-200/20 -ml-[170px] max-md:ml-0 blur-[145px]" />
             </div>
 
             <div className="flex flex-col relative [&>*:not(:last-child)]:after:absolute [&>*:not(:last-child)]:after:h-0.5 [&>*:not(:last-child)]:after:w-full [&>*:not(:last-child)]:after:bg-gray-200 [&>*:not(:last-child)]:after:bottom-0 max-md:[&>*:not(:last-child)]:after:hidden">
@@ -297,9 +297,9 @@ export default function IndexPage() {
           </div>
           <div className="relative z-10">
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex max-md:flex-col -z-10 max-md:hidden">
-              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/20 blur-[145px]" />
-              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/25 -ml-[170px] max-md:ml-0 blur-[145px]" />
-              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/20 -ml-[170px] max-md:ml-0 blur-[145px]" />
+              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary1-200/20 blur-[145px]" />
+              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary1-200/25 -ml-[170px] max-md:ml-0 blur-[145px]" />
+              <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary1-200/20 -ml-[170px] max-md:ml-0 blur-[145px]" />
             </div>
             <div className="grid grid-cols-3 max-md:grid-cols-1 gap-8">
               {/* Video Idea Generator */}

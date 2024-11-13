@@ -54,7 +54,7 @@ export default function NavCards() {
         <Link href={page.href} key={index}>
           <Card className="transition-shadow hover:shadow-lg cursor-pointer" style={{minHeight:"170px"}}>
             <CardHeader className="flex flex-row items-center gap-4">
-              <div className="rounded-full bg-primary p-2 text-primary-foreground">
+              <div className="rounded-full bg-primary1 p-2 text-primary-foreground">
                 <page.icon className="h-6 w-6 text-white dark:text-black" />
               </div>
               <CardTitle>{page.name}</CardTitle>

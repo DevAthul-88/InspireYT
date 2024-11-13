@@ -5,8 +5,8 @@ import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/shared/icons"
 import { UserAuthForm } from "@/components/forms/user-auth-form"
 import { Suspense } from "react"
-import LogoDark from '@/public/_static/logo_dark.svg'
-import LogoWhite from '@/public/_static/logo_white.svg'
+import LogoDark from '@/public/logo_dark.png';
+import LogoWhite from '@/public/logo_light.png';
 import AuthBg from '@/public/_static/auth_bg.jpg'
 import Image from "next/image";
 
@@ -33,7 +33,6 @@ export default function RegisterPage() {
           alt="Decorative Background"
           layout="fill"
           objectFit="cover"
-          className="opacity-50" // Adjust the opacity or other styles as needed
         />
       </div>
       <div className="lg:p-8">
@@ -42,14 +41,14 @@ export default function RegisterPage() {
             <div className="mx-auto">
               <Image
                 src={LogoDark}
-                width={100}
+                width={150}
                 alt="logo"
                 className="inline-block dark:hidden mb-4"
               />
               <Image
                 src={LogoWhite}
                 alt="logo dark version"
-                width={100}
+                width={150}
                 className="hidden dark:inline-block  mb-4"
               />
             </div>

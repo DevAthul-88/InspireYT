@@ -73,7 +73,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
     <header>
 
       <div
-        className={`top-nav fixed top-0 left-0 w-full py-2 text-center duration-500 transition-all bg-primary z-10 origin-top ${isScrolled ? 'scale-y-0' : 'scale-y-100'
+        className={`top-nav fixed top-0 left-0 w-full py-2 text-center duration-500 transition-all bg-primary1 z-10 origin-top ${isScrolled ? 'scale-y-0' : 'scale-y-100'
           }`}
         id="top-nav"
       >
