@@ -220,13 +220,20 @@ export function MobileSheetSidebar({ links }: DashboardSidebarProps) {
                   href="#"
                   className="flex items-center gap-2 text-lg font-semibold"
                 >
-                  <Icons.logo className="size-6" />
-                  <span className="font-urban text-xl font-bold">
-                    {siteConfig.name}
-                  </span>
+                  <Image
+                    src={LogoDark}
+                    width={150}
+                    alt="logo"
+                    className="inline-block dark:hidden"
+                  />
+                  <Image
+                    src={LogoWhite}
+                    alt="logo dark version"
+                    width={150}
+                    className="hidden dark:inline-block"
+                  />
                 </Link>
 
-                InspireYT
 
                 {links.map((section) => (
                   <section
