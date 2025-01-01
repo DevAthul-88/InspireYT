@@ -118,14 +118,14 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
               />
             )
           ) : (
-            <Link href={"/login"}>
-              <Button
-                variant={offer.title.toLocaleLowerCase() === "pro" ? "default" : "outline"}
-                rounded="full"
-              >
-                Sign in
-              </Button>
-            </Link>
+
+            <Button
+              variant={offer.title.toLocaleLowerCase() === "pro" ? "default" : "outline"}
+              rounded="full"
+            ><Link href={"/login"}>
+                Sign in</Link>
+            </Button>
+
           )}
         </div>
       </div>
