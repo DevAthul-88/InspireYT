@@ -49,7 +49,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
           <p className="flex font-urban text-sm font-bold uppercase tracking-wider text-muted-foreground">
             {offer.title}
           </p>
-  
+
           <div className="flex flex-row">
             <div className="flex items-end">
               <div className="flex text-left text-4xl font-semibold leading-6">
@@ -77,7 +77,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
             </div>
           ) : null}
         </div>
-  
+
         <div className="flex h-full flex-col justify-between gap-16 p-8">
           <ul className="space-y-3 text-left text-base font-medium leading-normal">
             {offer.benefits.map((feature) => (
@@ -86,7 +86,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
                 <p>{feature}</p>
               </li>
             ))}
-  
+
             {offer.limitations.length > 0 &&
               offer.limitations.map((feature) => (
                 <li className="flex items-start text-muted-foreground" key={feature}>
@@ -95,7 +95,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
                 </li>
               ))}
           </ul>
-  
+
           {userId && subscriptionPlan ? (
             offer.title === "Starter" ? (
               <Link
@@ -118,58 +118,59 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
               />
             )
           ) : (
-            <Button
-              variant={offer.title.toLocaleLowerCase() === "pro" ? "default" : "outline"}
-              rounded="full"
-              onClick={() => setShowSignInModal(true)}
-            >
-              Sign in
-            </Button>
+            <Link href={"/login"}>
+              <Button
+                variant={offer.title.toLocaleLowerCase() === "pro" ? "default" : "outline"}
+                rounded="full"
+              >
+                Sign in
+              </Button>
+            </Link>
           )}
         </div>
       </div>
     );
   };
-  
+
 
   return (
- 
-      <section className="flex flex-col items-center text-center">
-        <HeaderSection label="Pricing" title="Start at full speed !" />
 
-        <div className="mb-4 mt-10 flex items-center gap-5">
-          <ToggleGroup
-            type="single"
-            size="sm"
-            defaultValue={isYearly ? "yearly" : "monthly"}
-            onValueChange={toggleBilling}
-            aria-label="toggle-year"
-            className="h-9 overflow-hidden rounded-full border bg-background p-1 *:h-7 *:text-muted-foreground"
+    <section className="flex flex-col items-center text-center">
+      <HeaderSection label="Pricing" title="Start at full speed !" />
+
+      <div className="mb-4 mt-10 flex items-center gap-5">
+        <ToggleGroup
+          type="single"
+          size="sm"
+          defaultValue={isYearly ? "yearly" : "monthly"}
+          onValueChange={toggleBilling}
+          aria-label="toggle-year"
+          className="h-9 overflow-hidden rounded-full border bg-background p-1 *:h-7 *:text-muted-foreground"
+        >
+          <ToggleGroupItem
+            value="yearly"
+            className="rounded-full px-5 data-[state=on]:!bg-primary1 data-[state=on]:!text-primary"
+            aria-label="Toggle yearly billing"
           >
-            <ToggleGroupItem
-              value="yearly"
-              className="rounded-full px-5 data-[state=on]:!bg-primary1 data-[state=on]:!text-primary"
-              aria-label="Toggle yearly billing"
-            >
-              Yearly (-20%)
-            </ToggleGroupItem>
-            <ToggleGroupItem
-              value="monthly"
-              className="rounded-full px-5 data-[state=on]:!bg-primary1 data-[state=on]:!text-primary"
-              aria-label="Toggle monthly billing"
-            >
-              Monthly
-            </ToggleGroupItem>
-          </ToggleGroup>
-        </div>
+            Yearly (-20%)
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            value="monthly"
+            className="rounded-full px-5 data-[state=on]:!bg-primary1 data-[state=on]:!text-primary"
+            aria-label="Toggle monthly billing"
+          >
+            Monthly
+          </ToggleGroupItem>
+        </ToggleGroup>
+      </div>
 
-        <div className="grid gap-5 bg-inherit py-5 lg:grid-cols-3">
-          {pricingData.map((offer) => (
-            <PricingCard offer={offer} key={offer.title} />
-          ))}
-        </div>
- 
-      </section>
- 
+      <div className="grid gap-5 bg-inherit py-5 lg:grid-cols-3">
+        {pricingData.map((offer) => (
+          <PricingCard offer={offer} key={offer.title} />
+        ))}
+      </div>
+
+    </section>
+
   );
 }
